@@ -1,0 +1,147 @@
+.cookie-popup {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Position it on the right side */
+    width: 300px; /* Adjust size as needed */
+    height: 70px; /* Adjust height as needed */
+    z-index: 1001;
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism background */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    display: none; /* Hide initially */
+    animation: flyIn 0.5s ease-out forwards; /* Fly-in animation */
+}
+.cookie-popup.fade-out {
+    animation: fadeOut 0.5s ease-out forwards; /* Fade-out animation */
+}
+
+.cookie-popup-content {
+    position: relative;
+}
+
+
+.close-cookie-popup {
+    position: fixed;
+    margin: 5px;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.close-cookie-popup:hover {
+    color: #ffb200; /* Change color on hover if desired */
+}
+
+@keyframes flyIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+/* Cookie explosion effect */
+.cookie-explosion {
+    position: absolute;
+    top: -50px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1002; /* Ensure it is above the popup */
+}
+
+.cookie-explosion .cookie {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('/resources/img/cookie.png') no-repeat center center;
+    background-size: cover;
+    animation: explode 0.5s ease-out forwards; /* Longer animation duration */
+    opacity: 0; /* Start invisible */
+}
+/* Random positions and timing for multiple cookies */
+.cookie-explosion .cookie:nth-child(1) {
+    top: 30%;
+    left: 10%;
+    animation-delay: 0s;
+}
+.cookie-explosion .cookie:nth-child(2) {
+    top: 40%;
+    left: 30%;
+    animation-delay: 0.2s;
+}
+.cookie-explosion .cookie:nth-child(3) {
+    top: 50%;
+    left: 50%;
+    animation-delay: 0.4s;
+}
+.cookie-explosion .cookie:nth-child(4) {
+    top: 60%;
+    left: 70%;
+    animation-delay: 0.6s;
+}
+.cookie-explosion .cookie:nth-child(5) {
+    top: 70%;
+    left: 90%;
+    animation-delay: 0.8s;
+}
+
+.cookie {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url('/resources/img/cookie.png') no-repeat center center; /* Replace with your cookie image path */
+    background-size: contain;
+    border-radius: 50%;
+    opacity: 1;
+    animation: explode 2s forwards;
+}
+
+
+@keyframes cookieFall {
+    0% {
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+}
+@keyframes explode {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-50px) scale(1.2); /* Fly up slightly */
+    }
+    100% {
+        transform: translateY(30px) scale(1); /* Fall down */
+        opacity: 0;
+    }
+}
+
+.cookie-fall {
+    animation: cookieFall 2s forwards;
+}
