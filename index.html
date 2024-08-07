@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riverbend by Phuxanem Network</title>
+    <link rel="stylesheet" href="resources/css/landing/style.css">
+</head>
+<body>
+<div class="parallax-background"></div>
+<div class="container">
+    <header>
+        <div class="header-background"></div>
+        <img src="resources/img/Unbenanntes_Projekt.png" alt="Phuxanem Network Logo" class="logo">
+        <img src="resources/img/RIVERBEND-29-6-2024.png" alt="Riverbend Logo">
+        <p>A Phuxanem Network Server</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="nav-item">Home</a></li>
+            <li><a href="#" class="nav-item">Server Info</a></li>
+            <li><a href="#" class="nav-item">Modpack</a></li>
+            <li><a href="#" class="nav-item">Origins</a></li>
+            <li><a href="#" class="nav-item">Rules</a></li>
+            <li><a href="#" class="nav-item">Vote</a></li>
+            <li><a href="#" class="nav-item">Discord</a></li>
+        </ul>
+    </nav>
+
+    <div class="server-info">
+        <h2>Welcome to Riverbend!</h2>
+        <div class="info-item">
+            <strong>Server Address:</strong> join.phuxanem.net
+        </div>
+        <div class="info-item">
+            <strong>Version:</strong> Custom Modpack
+        </div>
+        <div class="info-item">
+            <strong>Players Online:</strong> <span id="player-count">0</span>
+        </div>
+        <div class="info-item">
+            <strong>Status:</strong> <span id="server-status">Online</span>
+        </div>
+        <a href="#" class="cta-button">Join Now!</a>
+    </div>
+
+    <div class="server-info">
+        <h2>Custom Modpack</h2>
+        <p>Experience Riverbend with our unique custom modpack!</p>
+        <a href="#" class="cta-button">Download Modpack</a>
+    </div>
+
+    <div class="server-info">
+        <h2>Origins Classes</h2>
+        <p>Explore our diverse range of origins and choose your destiny!</p>
+
+        <div class="origin-categories">
+            <div class="category">
+                <h3>Elven Races</h3>
+                <div class="origin-list">
+                    <div class="origin-class" data-origin="Wood Elf"
+                         style="--shimmer-duration: 3s; --shimmer-opacity: 0.5; --shimmer-color: rgba(0, 255, 0, 0.2); --hover-color: rgba(0, 255, 0, 0.1); --hover-shadow: rgba(0, 255, 0, 0.5);">
+                        <h4>Wood Elf</h4>
+                        <div class="origin-details">
+                            <p class="description">Wood Elves are a wise, long-lived race who live in harmony with the
+                                Earth. They are quick with a sword and bow and can outwit their enemies while among the
+                                trees.</p>
+                            <div class="notable-changes">
+                                <span class="positive">+ Ranged Bonuses, Speed</span>
+                                <span class="neutral">• Stealthy, Vegetarian</span>
+                                <span class="negative">- Melee Damage, Defense</span>
+                            </div>
+                            <h5>Powers:</h5>
+                            <ul class="powers-list">
+                                <li><strong>Natural Archer:</strong> Wood Elves spend their whole lives training with
+                                    bows - their arrows are always more deadly.
+                                </li>
+                                <li><strong>Forest Vision:</strong> While in tall shrubbery or leaves, wood elves can
+                                    crouch to gain night vision and become undetectable to nearby mobs.
+                                </li>
+                                <li><strong>Eagle Eyed:</strong> Wood Elves can track an enemy for a short time after
+                                    damaging them, even when they aren't in view.
+                                </li>
+                                <li><strong>Focus:</strong> After charging for a few seconds, release an arrow at
+                                    increased velocity, piercing enemies, flying further, and dealing more damage.
+                                </li>
+                                <li><strong>Elegant:</strong> Wood Elves have less health and are slowed by wearing
+                                    heavy armor (This can be prevented with an enchantment).
+                                </li>
+                                <li><strong>Steward:</strong> Wood elves live off of and in harmony with the forest -
+                                    They cannot digest meat.
+                                </li>
+                                <li><strong>Towering:</strong> Wood elves are slightly taller than the average human.
+                                </li>
+                                <li><strong>Graceful:</strong> Wood elves are not as powerful, but they are quick. Your
+                                    attacks deal reduced damage but are slightly faster.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="origin-class" data-origin="High Elf"
+                         style="--shimmer-duration: 3s; --shimmer-opacity: 0.3; --shimmer-color: rgba(0, 0, 255, 0.2); --hover-color: rgba(0, 0, 255, 0.1); --hover-shadow: rgba(0, 0, 255, 0.5);">
+                        <h4>High Elf</h4>
+                        <div class="origin-details">
+                            <p class="description">High Elves are notoriously arrogant, though undeniably talented;
+                                elemental magics course strongly through their blood, though they are weaker with
+                                weaponry.</p>
+                            <div class="notable-changes">
+                                <span class="positive">+ Magic, Unique Abilities</span>
+                                <span class="negative">- Physical Damage</span>
+                                <span class="negative">- Defense</span>
+                            </div>
+                            <h5>Powers:</h5>
+                            <ul class="powers-list">
+                                <li><strong>Elegant:</strong> High Elves are slowed by wearing heavy armor (This can be
+                                    prevented with an enchantment), and have less health.
+                                </li>
+                                <li><strong>Draw Essence:</strong> By holding different items, high elves can channel
+                                    the object's energy to unleash various magics.
+                                </li>
+                                <li><strong>Fragile:</strong> A High Elf is not built for hand to hand combat. They are
+                                    much more susceptible to physical damage, and have less health.
+                                </li>
+                                <li><strong>Mystic Affinity:</strong> High Elves are powerful and clever manipulators of
+                                    arcane energy - they deal more magic damage and take less magic damage than other
+                                    races.
+                                </li>
+                                <li><strong>Highborne:</strong> High Elves naturally have more mana than other races,
+                                    and can channel the power of their elders to regenerate mana quickly.
+                                </li>
+                                <li><strong>Towering:</strong> High Elves are slender and slightly taller than the
+                                    average human.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="origin-class" data-origin="Moon Elf"
+                         style="--shimmer-duration: 3s; --shimmer-opacity: 0.2; --shimmer-color: rgba(173, 216, 230, 0.2); --hover-color: rgba(173, 216, 230, 0.1); --hover-shadow: rgba(173, 216, 230, 0.5);">
+                        <h4>Moon Elf</h4>
+                        <div class="origin-details">
+                            <p class="description">Moon Elves are mysterious, ethereal beings not of this world. They
+                                are named not for their homeland, but for the only thing their victims can see before
+                                their end.</p>
+                            <div class="notable-changes">
+                                <span class="positive">+ Dagger Damage</span>
+                                <span class="positive">+ Dextrous</span>
+                                <span class="neutral">• Stealthy, Doesn't Sleep</span>
+                                <span class="negative">- Defense</span>
+                            </div>
+                            <h5>Powers:</h5>
+                            <ul class="powers-list">
+                                <li><strong>Foreign World:</strong> Try as they might, Moon Elves cannot sleep in the
+                                    overworld.
+                                </li>
+                                <li><strong>To the Shadows:</strong> In the dark, Moon Elves can turn invisible by
+                                    sneaking, and move a short distance while stealthed. When attacking from stealth,
+                                    their first attack deals bonus damage and ends the invisibility. This deals extra
+                                    damage if wielding a dagger.
+                                </li>
+                                <li><strong>Elegant:</strong> Moon Elves are slowed by wearing heavy armor. This can be
+                                    prevented with an enchantment.
+                                </li>
+                                <li><strong>Ethereal:</strong> Moon Elves are thin and even slightly translucent, and
+                                    their skin has a peculiar blue hue.
+                                </li>
+                                <li><strong>Fragile:</strong> Moon Elves have reduced health and take increased physical
+                                    damage.
+                                </li>
+                                <li><strong>Moonlight Rogue:</strong> Moon Elves are most efficient wielding a light and
+                                    easy to conceal weapon. They deal more damage with daggers and knives.
+                                </li>
+                                <li><strong>Nimble:</strong> With their quick reflexes, Moon Elves have a small chance
+                                    to dodge any attack.
+                                </li>
+                                <li><strong>Towering:</strong> Moon Elves are about the same height as their distant
+                                    relatives of the forest, making them slightly taller than humans.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>Magical Beings</h3>
+                <div class="origin-list">
+                    <div class="origin-class" data-origin="Alfiq"
+                         style="--shimmer-duration: 3s; --shimmer-opacity: 0.2; --shimmer-color: rgba(123, 104, 238, 0.2); --hover-color: rgba(123, 104, 238, 0.1); --hover-shadow: rgba(123, 104, 238, 0.5);">
+                        <h4>Alfiq</h4>
+                        <div class="origin-details">
+                            <p class="description">Alfiq are a cunning species of anthropomorphic felines with sharp
+                                claws and excellent agility. Their roads often lead to warm sands.</p>
+                            <div class="notable-changes">
+                                <span class="positive">+ Unarmed Bonus</span>
+                                <span class="positive">+ Unique Movement</span>
+                                <span class="neutral">• Carnivore</span>
+                                <span class="negative">- Defense</span>
+                            </div>
+                            <h5>Powers:</h5>
+                            <ul class="powers-list">
+                                <li><strong>Clawed:</strong>Near sunset and sunrise, Alfiq will move and attack much
+                                    more quickly. At other times, they are lethargic and slightly slower.
+                                </li>
+                                <li><strong>Crepuscular:</strong> Near sunset and sunrise, Alfiq will move and attack
+                                    much more quickly. At other times, they are lethargic and slightly slower.
+                                </li>
+                                <li><strong>On Your Feet:</strong> If you ever fall from a height where you would take 5
+                                    hearts or more of damage, they instead take no damage at all.
+                                </li>
+                                <li><strong>Pickpocket:</strong> Right click the back of a villager while crouching with
+                                    empty paws for a chance to steal some emeralds. Or get caught. Rumor has it you may
+                                    be able to steal from other players.
+                                </li>
+                                <li><strong>Pounce:</strong> After briefly crouching without moving to charge up, an
+                                    Alfiq can leap forward a great distance. Striking an enemy during the pounce deals
+                                    bonus damage.
+                                </li>
+                                <li><strong>Poor Grip:</strong> Alfiq have reduced breaking speed with tools and reduced
+                                    damage with handled weapons like swords and axes.
+                                </li>
+                                <li><strong>Agile Preference:</strong> Alfiq prefer to wear only light armors for ease
+                                    of movement. Heavier armors can be worn without penalty with an enchantment.
+                                </li>
+                                <li><strong>Meow:</strong> (No description provided)</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="origin-class" data-origin="Fae"
+                         style="--shimmer-duration: 3s; --shimmer-opacity: 0.2; --shimmer-color: rgba(255, 20, 147, 0.2); --hover-color: rgba(255, 20, 147, 0.1); --hover-shadow: rgba(255, 20, 147, 0.5);">
+                        <h4>Fae</h4>
+                        <div class="origin-details">
+                            <p class="description">Fae are short magical winged humanoids, regarded as spirits of nature
+                                and said to haunt forests and lead travelers' astray. They are equal parts mystic and
+                                trickster.</p>
+                            <div class="notable-changes">
+                                <span class="positive">+ Hovering, Magic</span>
+                                <span class="neutral">• Short: 122cm/4'0"</span>
+                                <span class="negative">- Loved by Mobs</span>
+                                <span class="negative">- Defense</span>
+                            </div>
+                            <ul class="powers-list">
+                                <li><strong>Allure:</strong> Fae are naturally alluring. Mobs will pursue them from much
+                                    further away than they would other creatures.
+                                </li>
+                                <li><strong>Diminutive:</strong> Fae are fairly short, most barely being taller than the
+                                    average goblin.
+                                </li>
+                                <li><strong>Magical Suppression:</strong> Iron and silver inhibit fae powers. It is
+                                    unbearable for them to wear it.
+                                </li>
+                                <li><strong>Levitation:</strong>Fae are light, winged creatures who can float
+                                    effortlessly on the air. Press the primary active key to hover upward.
+                                </li>
+                                <li><strong>Magic Resistance:</strong> As magical creatures themselves, faes take less
+                                    magic damage compared to other creatures.
+                                </li>
+                                <li><strong>Regeneration:</strong> Fae can channel magical energy and heal themselves
+                                    quickly, at the cost of hunger.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="origin-class" data-origin="Pixie"
+                         style="--shimmer-duration: 3s; --shimmer-opacity: 0.2; --shimmer-color: rgba(255, 105, 180, 0.2); --hover-color: rgba(255, 105, 180, 0.1); --hover-shadow: rgba(255, 105, 180, 0.5);">
+                        <h4>Pixie</h4>
+                        <div class="origin-details">
+                            <p class="description"></p>
+                            <div class="notable-changes">
+                                <span class="positive">+ Unique Flight, Odd</span>
+                                <span class="neutral">• Tiny: 22cm/9"</span>
+                                <span class="negative">- Defense, Reputation</span>
+                            </div>
+                            <ul class="powers-list">
+                                <li><strong>Curse of Flight:</strong> Pixies cannot wear chestplates more substantial
+                                    than leather, and cannot use other wings to fly differently.
+                                </li>
+                                <li><strong>Feather Footed:</strong> Pixies are so light, it is impossible for them to
+                                    take fall damage.
+                                </li>
+                                <li><strong>On the Dusts:</strong> Pixies can fly and propel themselves forward and
+                                    upward. Read the boxes next to this power for instructions on how to fly.
+                                </li>
+                                <li><strong>Shortcut:</strong> You can sit on top of another player's head by
+                                    right-clicking them with empty hands.
+                                </li>
+                                <li><strong>Good Fortunes:</strong> Although pixies can be troublesome, they are also
+                                    associated with good luck. When mining, they will occasionally get something
+                                    valuable from plain stone.
+                                </li>
+                                <li><strong>Mischief Maketh Man:</strong> Pixies are capable of performing numerous
+                                    mischievous acts which, if not always dangerous, are certainly loud.
+                                </li>
+                                <li><strong>Bitesize:</strong> Pixies are some of the smallest creatures to roam the
+                                    land, rarely even reaching the average human's knee.
+                                </li>
+                                <li><strong>Soaked:</strong> Being as small as they are, water poses a significant
+                                    threat to pixies. It hampers their movement and impairs their ability to fly.
+                                </li>
+                                <li><strong>Troublemaker:</strong> Villagers know pixies by the legends of trouble they
+                                    cause, and will refuse to trade with them.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>Mythical Creatures</h3>
+                <div class="origin-list">
+                    <div class="origin-class" data-origin="Arachnae"
+                         style="--shimmer-duration: 3s; --shimmer-opacity: 0.2; --shimmer-color: rgba(128, 0, 0, 0.2); --hover-color: rgba(128, 0, 0, 0.1); --hover-shadow: rgba(128, 0, 0, 0.5);">
+                        <h4>Arachnae</h4>
+                        <div class="origin-details">
+                            <p class="description">A grotesque amalgamation of spider and human, with venomous fangs and
+                                bristled feet yet the ability to walk upright and wield weaponry.</p>
+                            <div class="notable-changes">
+                                <span class="positive">+ Poison, Crowd Control</span>
+                                <span class="positive">+ Wall Climbing</span>
+                                <span class="neutral">• Carnivore</span>
+                                <span class="negative">- Hunger, Armor</span>
+                            </div>
+                            <ul class="powers-list">
+                                <li><strong>Bottomless Stomach:</strong> Arachnae require a larger quantity of food to
+                                    stay alive.
+                                </li>
+                                <li><strong>Brittle:</strong> The Arachnae's chitinous exoskeleton makes it difficult to
+                                    move if wearing armor heavier than iron. This can be prevented with an enchantment.
+                                </li>
+                                <li><strong>Climber:</strong> The fine bristles on the Arachnae's legs allow them to
+                                    climb up walls.
+                                </li>
+                                <li><strong>Fragile:</strong> The Arachnae's exoskeleton is more vulnerable to damage.
+                                    They have slightly less health than a regular human.
+                                </li>
+                                <li><strong>Many Eyes:</strong> The Arachnae's eight eyes are all adapted to darkness,
+                                    and allow them to see clearly even with very little light.
+                                </li>
+                                <li><strong>Venomous Bite:</strong> Arachnae's fangs contain venom, and every attack has
+                                    a chance to inflict poison.
+                                </li>
+                                <li><strong>Web Slinger:</strong> Arachnae can, on command, spin webs in which their
+                                    opponents will be immobilized for a short while.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="origin-class" data-origin="Gorgon"
+                         style="--shimmer-duration: 3s; --shimmer-opacity: 0.2; --shimmer-color: rgba(34, 139, 34, 0.2); --hover-color: rgba(34, 139, 34, 0.1); --hover-shadow: rgba(34, 139, 34, 0.5);">
+                        <h4>Gorgon</h4>
+                        <div class="origin-details">
+                            <p class="description">Gorgons are cursed creatures who were once human, with hair made of
+                                writhing snakes and a haunting visage said to petrify those who witness it.</p>
+                            <div class="notable-changes">
+                                <span class="positive">+ Poison Damage, Immunity</span>
+                                <span class="positive">+ Crowd Control</span>
+                                <span class="neutral">- Hydrophobe</span>
+                                <span class="negative">- Unique weaknesses</span>
+                            </div>
+                            <ul class="powers-list">
+                                <li><strong>Hydrophobe:</strong> Gorgons cannot tolerate the purity of water and take
+                                    damage from it.
+                                </li>
+                                <li><strong>To Stone:</strong> Gorgons were doomed to stay bound in dark caves and old
+                                    dungeons. Being outside in daylight causes them to become petrified until night. Can
+                                    be negated by wearing a helmet.
+                                </li>
+                                <li><strong>Silver Aversion:</strong> Gorgons are weak to the purity of silver - they
+                                    cannot stand to wear it and take damage when wielding it. (Iron is also counted as
+                                    silver)
+                                </li>
+                                <li><strong>Petrifying Gaze:</strong> Meet the eyes of any mob facing you, turning them
+                                    to stone briefly. Does not work on bosses.
+                                </li>
+                                <li><strong>Poisoned Blood:</strong> Gorgons are immune to poison, and have a chance to
+                                    spill their toxic blood onto nearby enemies when hit, poisoning them.
+                                </li>
+                                <li><strong>Revenge</strong> Gorgons deal significantly increased damage at low health.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="origin-class" data-origin="Yeti"
+                         style="--shimmer-duration: 3s; --shimmer-opacity: 0.2; --shimmer-color: rgba(0, 191, 255, 0.2); --hover-color: rgba(0, 191, 255, 0.1); --hover-shadow: rgba(0, 191, 255, 0.5);">
+                        <h4>Yeti</h4>
+                        <div class="origin-details">
+                            <p class="description">Thick-furred beasts from frosty woods, a Yeti's dominion over ice
+                                allows them to freeze foes, but they are especially vulnerable to fiery attacks.</p>
+                            <div class="notable-changes">
+                                <span class="positive">+ Frost-Based, Tanky</span>
+                                <span class="neutral">• Large: 203cm/6'8"</span>
+                                <span class="negative">- Heat Sensitive</span>
+                            </div>
+                            <ul class="powers-list">
+                                <li><strong>Flammable:</strong> Yetis are susceptible to fire damage due to their wintry
+                                    nature.
+                                </li>
+                                <li><strong>Frigid Pulse:</strong> Yeti can entomb nearby foes in ice on command. Does
+                                    not work in the nether or on bosses.
+                                </li>
+                                <li><strong>From Whence you Came:</strong> In icy biomes, yetis move faster and negate
+                                    fall damage.
+                                </li>
+                                <li><strong>Frosty Breath:</strong> The frosty breath of the yeti slows any opponents
+                                    that get close to them.
+                                </li>
+                                <li><strong>Thick Fur:</strong> In deserts, thick fur becomes a curse - it slows Yetis'
+                                    movement and reduces health.
+                                </li>
+                                <li><strong>Titanic:</strong> Yetis have far more health than a regular human.</li>
+                                <li><strong>Unstoppable:</strong> Yetis are immune to the slowness effect.</li>
+                                <li><strong>Winter Body:</strong> Yetis are marginally taller than a regular human, and
+                                    significantly wider.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>Other Races</h3>
+                <div class="origin-list">
+                    <div class="origin-class" data-origin="Dwarf"
+                         style="--shimmer-duration: 3s; --shimmer-opacity: 0.2; --shimmer-color: rgba(184, 134, 11, 0.2); --hover-color: rgba(184, 134, 11, 0.1); --hover-shadow: rgba(184, 134, 11, 0.5);">
+                        <h4>Dwarf</h4>
+                        <div class="origin-details">
+                            <p class="description">Dwarves are practical, stocky, and prideful. They excel at mining and
+                                living underground, but struggle with the daylight. Rock and stone, brother.</p>
+                            <div class="notable-changes">
+                                <span class="positive">+ Mining, Caving</span>
+                                <span class="neutral">• Short: 102cm/3'7"</span>
+                                <span class="negative">- Sun sensitive</span>
+                                <span class="negative">- Can't swim</span>
+                            </div>
+                            <ul class="powers-list">
+                                <li><strong>Darkness Dweller:</strong> Direct sunlight will burn dwarven eyes, blinding
+                                    them temporarily. Preventable with an enchantment or a gold helmet.
+                                </li>
+                                <li><strong>Dense:</strong> Dwarves are extremely heavy for their size; they sink
+                                    rapidly in water.
+                                </li>
+                                <li><strong>Dwarven Tech:</strong> Dwarves are capable of mining stone without a
+                                    pickaxe, and mine anything faster than others.
+                                </li>
+                                <li><strong>Stocky</strong> Dwarves are just short enough to fit into a 1 meter tall
+                                    tunnel (and almost as wide as one).
+                                </li>
+                                <li><strong>Nocturnal Eyes:</strong> Dwarves can focus to see clearly without needing
+                                    any light source.
+                                </li>
+                                <li><strong>Potent Brew:</strong> Dwarves are notorious for their powerful drinks which
+                                    would knock out someone twice their size. Activate to take a swig and fully restore
+                                    health.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="origin-class" data-origin="Goblin"
+                         style="--shimmer-duration: 3s; --shimmer-opacity: 0.2; --shimmer-color: rgba(85, 107, 47, 0.2); --hover-color: rgba(85, 107, 47, 0.1); --hover-shadow: rgba(85, 107, 47, 0.5);">
+                        <h4>Goblin</h4>
+                        <div class="origin-details">
+                            <p class="description">Goblins are obsessed with gold and treasure and tend to find a little
+                                more loot wherever they look, but their small size leaves them vulnerable in combat.</p>
+                            <div class="notable-changes">
+                                <span class="positive">+ Gold Gear Bonuses</span>
+                                <span class="positive">+ Luck, Speed</span>
+                                <span class="neutral">• Small: 92cm/3'3"</span>
+                                <span class="negative">- Health, Defense</span>
+                            </div>
+                            <ul class="powers-list">
+                                <li><strong>Cunning:</strong> Goblins are clever creatures, and know where to find more
+                                    rare loot most others would miss.
+                                </li>
+                                <li><strong>Frail:</strong> Due to their small stature, goblins have less health and are
+                                    more prone to damage.
+                                </li>
+                                <li><strong>Greedy:</strong> Goblins have a special relationship with treasure - they
+                                    gain extra bonuses when using or wearing golden gear.
+                                </li>
+                                <li><strong>Careful Hoarder:</strong> Gold in a goblin's hands lasts for much longer
+                                    than most others who are careless with it.
+                                </li>
+                                <li><strong>Nimble:</strong> Although short, goblins are quite fast, allowing them to
+                                    outrun most stronger enemies instead of fighting.
+                                </li>
+                                <li><strong>Stunted:</strong> Goblins are very short, at less than half the height of a
+                                    human.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="origin-class" data-origin="Ogre"
+                         style="--shimmer-duration: 3s; --shimmer-opacity: 0.2; --shimmer-color: rgba(107, 142, 35, 0.2); --hover-color: rgba(107, 142, 35, 0.1); --hover-shadow: rgba(107, 142, 35, 0.5);">
+                        <h4>Ogre</h4>
+                        <div class="origin-details">
+                            <p class="description"> Ogres are a large, short-tempered, and brutish subspecies of Orc.
+                                Their lumbering size and limited intelligence are made up for by their raw strength.</p>
+                            <div class="notable-changes">
+                                <span class="positive">+ Axe Bonuses, Defense</span>
+                                <span class="neutral">• Massive: 268cm/9'5"</span>
+                                <span class="negative">- Hunger, Speed</span>
+                            </div>
+                            <ul class="powers-list">
+                                <li><strong>Gargantuan:</strong> Ogres are massive, and can't fit through doors or even
+                                    in many small structures.
+                                </li>
+                                <li><strong>Lead Belly:</strong> Ogres care little for what they eat. Food is food. They
+                                    do not experience poison or hunger.
+                                </li>
+                                <li><strong>Ravenous:</strong> Ogres are almost never full; they need to eat near
+                                    constantly to stay satisfied.
+                                </li>
+                                <li><strong>Ravager:</strong> Axes feel right in an Ogre's hand; this comfort allows
+                                    them to swing with much more force.
+                                </li>
+                                <li><strong>Bloodlust:</strong> Ogres are known to unpredictably fly into a blinding
+                                    rage, where they can stomp through a horde of foes quickly but can barely make out
+                                    what's happening around them.
+                                </li>
+                                <li><strong>Sluggish:</strong> Ogres are slower than most, to conserve some of their
+                                    energy despite their massive size.
+                                </li>
+                                <li><strong>Stocky:</strong> Ogres' thick skin and dense bones make them able to tank
+                                    many more hits than others.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="origin-class" data-origin="Human"
+                         style="--shimmer-duration: 3s; --shimmer-opacity: 0.2; --shimmer-color: rgba(169, 169, 169, 0.2); --hover-color: rgba(169, 169, 169, 0.1); --hover-shadow: rgba(169, 169, 169, 0.5);">
+                        <h4>Human</h4>
+                        <div class="origin-details">
+                            <p class="description">The Human is just the normal player with anything special</p>
+                            <div class="notable-changes">
+                                <span class="neutral">• Normal</span>
+                            </div>
+                            <ul class="powers-list">
+                                <li><strong>Normality: </strong>Nothing happens</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>Supernatural</h3>
+                <div class="origin-list">
+                    <div class="origin-class" data-origin="Banshee"
+                         style="--shimmer-duration: 3s; --shimmer-opacity: 0.2; --shimmer-color: rgba(128, 0, 128, 0.2); --hover-color: rgba(128, 0, 128, 0.1); --hover-shadow: rgba(128, 0, 128, 0.5);">
+                        <h4>Banshee</h4>
+                        <div class="origin-details">
+                            <p class="description">Banshees are anguished spirits whose cries can shatter glass and
+                                drive people to madness. In myth, their presence is often considered an omen of
+                                death.</p>
+                            <div class="notable-changes">
+                                <span class="positive">+ Flight, Support, Phasing</span>
+                                <span class="negative">- Defense</span>
+                                <span class="negative">- Extreme changes, read first!</span>
+                            </div>
+                            <ul class="powers-list">
+                                <li><strong>Spectral:</strong> Banshees possess the ability to become intangible, moving
+                                    freely throughout the physical realm while being unable to interact with it. This
+                                    uses tremendous energy and cannot be activated while low on hunger.
+                                </li>
+                                <li><strong>Hexed:</strong> Banshees are shrouded in curses. Every time they are hit,
+                                    there is a small chance that the attacker will be consigned to a fate of slow,
+                                    agonizing death.
+                                </li>
+                                <li><strong>Immaterial:</strong> Banshees have half the health a living person would
+                                    have.
+                                </li>
+                                <li><strong>Dimeritium Shackles:</strong> Magically suppressive metals, such as iron or
+                                    silver, are completely intolerable to banshees.
+                                </li>
+                                <li><strong>Lunar Nexus:</strong> Banshees restore no hunger from food - their energy is
+                                    only restored by direct moonlight. However, they cannot starve.
+                                </li>
+                                <li><strong>Preemptive Elegy:</strong> Banshee's shrieks forewarn death. They can
+                                    unleash an earsplitting wail, pushing back nearby entities and summoning a small
+                                    protective circle. Targets hit directly by the shriek will be disoriented.
+                                </li>
+                                <li><strong>Cursed Sigil:</strong> You deal increased damage when wielding a cursed
+                                    weapon.
+                                </li>
+                                <li><strong>Cursed Ward: </strong> You resist additional damage for each piece of cursed
+                                    armor worn.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="origin-class" data-origin="Incubus"
+                         style="--shimmer-duration: 3s; --shimmer-opacity: 0.2; --shimmer-color: rgba(178, 34, 34, 0.2); --hover-color: rgba(178, 34, 34, 0.1); --hover-shadow: rgba(178, 34, 34, 0.5);">
+                        <h4>Incubus</h4>
+                        <div class="origin-details">
+                            <p class="description">Incubi are evil servants of a dark power. They are powerful in their
+                                own realm, but in exchange for this they have given up their soul, and are weak to pure
+                                sources.</p>
+                            <div class="notable-changes">
+                                <span class="positive">+ Nether Bonuses</span>
+                                <span class="neutral">• Fire-based</span>
+                                <span class="negative">- Damaged by Water</span>
+                                <span class="negative">- Weak in Overworld</span>
+                            </div>
+                            <ul class="powers-list">
+                                <li><strong>Carnivore:</strong> An incubus' bloodlust is insatiable. If it isn't the
+                                    flesh of an animal, it's worthless.
+                                </li>
+                                <li><strong>Demon Fire:</strong> Incubi are innately more potent with all fire magics,
+                                    and can release a burst of flame at will. Scales with Fire Spell Power.
+                                </li>
+                                <li><strong>Hellborne:</strong> Fire feels like home - it deals no damage to Incubi and
+                                    satiates them.
+                                </li>
+                                <li><strong>Hydrophobe:</strong> Water scalds Incubi, damaging them on contact.</li>
+                                <li><strong>Impure:</strong> Incubi take extra damage from Smite and reverted effects
+                                    from healing and harming.
+                                </li>
+                                <li><strong>Realm Advantage:</strong> Incubi are not accustomed to dimensions where the
+                                    sun shines and are weaker there, but they are considerably stronger in the Nether.
+                                </li>
+                                <li><strong>Unholy Deal:</strong> An incubus can exchange some of their life force for
+                                    raw power for a short time. Triggered with Primary Active key.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="origin-class" data-origin="Plague Victim"
+                         style="--shimmer-duration: 3s; --shimmer-opacity: 0.2; --shimmer-color: rgba(128, 128, 0, 0.2); --hover-color: rgba(128, 128, 0, 0.1); --hover-shadow: rgba(128, 128, 0, 0.5);">
+                        <h4>Plague Victim</h4>
+                        <div class="origin-details">
+                            <p class="description">Disease-ridden half-dead creatures who can no longer be called human,
+                                cursed and trapped in eternal suffering as a result of a strange magical illness.</p>
+                            <div class="notable-changes">
+                                <span class="positive">+ Withering</span>
+                                <span class="neutral">• Unique playstyle</span>
+                                <span class="neutral">• Undead</span>
+                                <span class="negative">- Defense, Reputation</span>
+                                <span class="negative">- Difficult</span>
+                            </div>
+                            <ul class="powers-list">
+                                <li><strong>Contagious:</strong> The Plagued are a horrifying sight. Villagers will
+                                    refuse to trade with them out of fear.
+                                </li>
+                                <li><strong>Foul Aura:</strong> A horrifying magic swarms the victim, and slowly
+                                    consumes the life of any living nearby.
+                                </li>
+                                <li><strong>Insomniac:</strong> Sleep is impossible for the Plagued, due to their
+                                    unending agony.
+                                </li>
+                                <li><strong>Plague Immunity:</strong> Though the immense pain never ends, there is only
+                                    so much tissue that can die. Carriers are immune to poison and wither.
+                                </li>
+                                <li><strong>Eternal Suffering:</strong> Once every 5 minutes, upon death, the Plagued
+                                    are instead forcefully kept alive to prolong their torment.
+                                </li>
+                                <li><strong>Contagious Hex:</strong> Every time you strike, there is a chance to spread
+                                    the infection.
+                                </li>
+                                <li><strong>Sensitive Skin:</strong> The Plagued are covered in welts and lesions upon
+                                    the skin, tender and painful to touch. Its victims cannot wear armor for the pain it
+                                    causes.
+                                </li>
+                                <li><strong>Skin and Bones:</strong> This illness drains the spirit, resulting in
+                                    reduced health and speed.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="origin-class" data-origin="Revenant"
+                         style="--shimmer-duration: 3s; --shimmer-opacity: 0.2; --shimmer-color: rgba(105, 105, 105, 0.2); --hover-color: rgba(105, 105, 105, 0.1); --hover-shadow: rgba(105, 105, 105, 0.5);">
+                        <h4>Revenant</h4>
+                        <div class="origin-details">
+                            <p class="description">Revenants are misfortunate souls who died gruesome and painful
+                                deaths, but inexplicably returned to life. As a result, they become obsessed with
+                                manipulating life and death in other creatures.</p>
+                            <div class="notable-changes">
+                                <span class="positive">+ Summons</span>
+                                <span class="positive">+ Illager Friendly</span>
+                                <span class="neutral">• Undead, Complex</span>
+                                <span class="negative">- Reputation</span>
+                                <span class="negative">- Living Interactions</span>
+                            </div>
+                            <ul class="powers-list">
+                                <li><strong>Black Thumb:</strong> A Revenant cannot harvest any crops; they wilt at
+                                    their deathly touch.
+                                </li>
+                                <li><strong>Disturbed:</strong> Experimenting in the forbidden warps the mind. Revenants
+                                    cannot sleep, too scared to dream of what they wish they did not know.
+                                </li>
+                                <li><strong>Reaper's Ward:</strong> At will, a revenant can raise a circle of inert
+                                    skeletons, acting as a temporary shield to protect them from danger and damage
+                                    nearby enemies.
+                                </li>
+                                <li><strong>Putrid Communion:</strong> Through the unsettling act of consuming the flesh
+                                    or bones of the undead, a revenant can empower their next summon of the same type.
+                                </li>
+                                <li><strong>Necrotic Curse</strong> Revenants are immune to wither, and, like undead,
+                                    they take extra damage from smite, receive inverted effects from harming and healing
+                                    effects, and are immune to poison and regeneration effects.
+                                </li>
+                                <li><strong>Revenance:</strong> Revenants can reconstruct creatures of the night
+                                    modified to do their own bidding. These act as pets, will follow and teleport, and
+                                    skeletons can be equipped with any weapon. Strength of non-mounts scales with Soul
+                                    Spell Power. Summon by activating while holding:
+                                </li>
+                                <li><strong>Chaotic Ally:</strong> Villagers will refuse to trade with revenants and
+                                    iron golems will attack them on sight. However, they are accepted amongst the ranks
+                                    of the Pillagers.
+                                </li>
+                                <li><strong>Essence Extraction:</strong> When hit, revenants slowly build up a power
+                                    which allows them to siphon life from their enemies. This affects all creatures for
+                                    better or worse, except summoned dead.
+                                </li>
+                                <li><strong>Unguarded:</strong> Obsessing over the spirit realm leaves revenants more
+                                    open to attack in the physical realm. Most mobs deal more damage to them.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="origin-class" data-origin="Siren"
+                         style="--shimmer-duration: 3s; --shimmer-opacity: 0.2; --shimmer-color: rgba(0, 139, 139, 0.2); --hover-color: rgba(0, 139, 139, 0.1); --hover-shadow: rgba(0, 139, 139, 0.5);">
+                        <h4>Siren</h4>
+                        <div class="origin-details">
+                            <p class="description">Sirens are said to be a type of Merfolk. They have an ensnaring aura
+                                and their irresistible beauty is said to be the downfall of many a foolish sailor.</p>
+                            <div class="notable-changes">
+                                <span class="positive">+ Water-Based, Utility</span>
+                                <span class="neutral">• Weaker on Land</span>
+                                <span class="negative">- Vulnerable to Fire</span>
+                            </div>
+                            <ul class="powers-list">
+                                <li><strong>Amphibious:</strong> Sirens, being a subset of Mer, can survive in water,
+                                    and swim with increased speed.
+                                </li>
+                                <li><strong>Flammable:</strong> Sirens and fire do not mix. Any contact with flames
+                                    results in instant death. Be sure to watch your step in the nether!
+                                </li>
+                                <li><strong>Holy Water:</strong> Sirens have regenerative powers, which are at full
+                                    force when they are in water.
+                                </li>
+                                <li><strong>Out of Your Depth:</strong> Although sirens can survive just fine on land,
+                                    it is not their natural environment. As such, their regenerative abilities do not
+                                    apply, and any damage taken can only be healed with potions.
+                                </li>
+                                <li><strong>Prone:</strong> While sirens can regenerate their bodies, they are weak to
+                                    blunt force. Melee attacks do more damage to them.
+                                </li>
+                                <li><strong>Siren Song:</strong> Press the primary active key to make all mobs around
+                                    you neutral until hit. Does not work on bosses or players.
+                                </li>
+                                <li><strong>Captivating:</strong> Press the secondary active key to gain favor with a
+                                    villager and receive better trades.
+                                </li>
+                                <li><strong>Water Vision:</strong> Sirens have superior underwater vision compared to
+                                    other creatures.
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="originPopup" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <div class="popup-scrollable-content">
+            <img id="originImage" src="" alt="Origin Image">
+            <h3 id="originTitle"></h3>
+            <div id="originDescription"></div>
+        </div>
+    </div>
+</div>
+
+
+<script src="resources/js/landing/script.js"></script>
+</body>
+</html>
