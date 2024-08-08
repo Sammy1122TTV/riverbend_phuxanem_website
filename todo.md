@@ -1,0 +1,1 @@
+Change all images to highres
