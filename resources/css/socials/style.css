@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Minecraft&display=swap');
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(45deg, #2c2c2c, #3c3c3c);
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/resources/img/farm.png') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .parallax-background {
+        background-attachment: scroll;
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(20, 20, 20, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+header {
+    background: rgba(255, 178, 0, 0.1);
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    color: #ffb200;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Minecraft', sans-serif;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-link {
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Minecraft', sans-serif;
+}
+
+.social-link:hover {
+    background-color: rgba(255, 178, 0, 0.2);
+    color: #ffb200;
+    text-shadow: 0 0 5px rgba(255, 178, 0, 0.5);
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ffb200;
+    color: #2c2c2c;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffc233;
+}
