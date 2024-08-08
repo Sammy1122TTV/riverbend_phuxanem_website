@@ -94,7 +94,7 @@ header h1 {
 }
 
 .gallery-item:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .gallery-item img {
@@ -119,6 +119,7 @@ header h1 {
 .gallery-item:hover::before {
     opacity: 1;
 }
+
 
 .popup {
     display: none;
