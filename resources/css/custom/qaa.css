@@ -1,0 +1,34 @@
+.qa-section {
+    background: rgba(20, 20, 20, 0.4);
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.qa-section h2 {
+    color: #ffb200;
+    margin-top: 0;
+}
+
+.qa {
+    background: rgba(255, 178, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.qa strong {
+    color: #ffb200;
+}
+.question {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffb200;
+}
+
+.answer {
+    margin-left: 20px;
+    color: #ffffff;
+}
