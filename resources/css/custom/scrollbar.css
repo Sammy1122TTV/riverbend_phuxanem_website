@@ -1,0 +1,29 @@
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 178, 0, 0.7);
+    border-radius: 10px;
+    border: 6px solid rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 194, 51, 0.8);
+}
+::-webkit-scrollbar-track-piece:start {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ffb200 rgba(0, 0, 0, 0.1);
+}
